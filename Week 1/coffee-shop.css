@@ -331,4 +331,10 @@ details:hover {
       display: block;
       margin: 0.5rem 0;
     }
+
+    nav {
+      flex-direction: column;
+      position: relative;
+      padding: 1rem;
+    }
   }
