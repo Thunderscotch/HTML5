@@ -61,6 +61,10 @@ header q {
   /* padding: 0 1rem;  */
 }
 
+header h1 {
+  font-size: var(--text-3);
+}
+
 /* Typography */
 h1 {
   font-size: var(--text-3);
@@ -230,8 +234,8 @@ address, form {
   }
   
   .section_himg img {
-    width: 120px;
-    height: 120px;
+    width: 200px;
+    height: auto;
   }
   
   body {
@@ -373,10 +377,17 @@ address, form {
     gap: 2rem;
     padding: 2rem;
   }
+
+  .section_himg {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 1rem;
+    align-items: center;
+  }
   
   .section_himg img {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 80%;
   }
 
   details {
@@ -552,5 +563,47 @@ details:hover {
   .page {
     max-width: 120rem;
     margin-inline: auto;
+  }
+  .section_h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-accent);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .section_div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .section_article {
+    background-color: var(--color-lightest);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 1rem;
+  }
+
+  .section_himg {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .section_himg img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
 }
